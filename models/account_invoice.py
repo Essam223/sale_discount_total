@@ -99,4 +99,4 @@ class AccountInvoice(models.Model):
 class AccountInvoiceLine(models.Model):
     _inherit = "account.invoice.line"
 
-    discount = fields.Float(string='Discount (%)', digits=(16, 20), default=0.0)
+    discount = fields.Integer(string='Discount (%)', digits=(16, 20), default=0.0)
